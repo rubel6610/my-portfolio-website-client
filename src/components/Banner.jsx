@@ -6,10 +6,10 @@ import Hero from "../assets/banner.png"
 const Banner = () => {
   return (
     <div className="w-full bg-base-100 px-4 lg:px-20 py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side - Info */}
-        <div className="space-y-5 order-2 lg:order-1 flex items-center flex-col ">
+        <div className="space-y-5 order-2 md:order-1 flex items-center flex-col ">
           <h1 className="text-4xl lg:text-5xl font-bold text-primary">
             Md Rubel Hosen
           </h1>

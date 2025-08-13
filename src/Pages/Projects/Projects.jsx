@@ -15,19 +15,30 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3  gap-8">
           {projectInfo.map((project) => (
-            <div
+            <Link to={`/project/${project.id}`}
               key={project.id}
-              className="bg-base-100 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition border md:border-none"
+              className="bg-base-100 shadow-lg rounded-xl overflow-hidden hover:shadow-lg hover:shadow-blue-400 hover:scale-105  scale-100 transition border md:border-none"
             >
               <img
                 src={project.img}
                 alt={project.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-50 object-cover"
               />
-              <div className="p-5 flex flex-col items-center">
+              <div className="p-5  flex flex-col items-center">
+                
                 <h3 className="text-xl font-semibold text-center mb-4">
                   {project.name}
                 </h3>
+                 <div className="flex flex-wrap gap-2 my-2">
+            {project.stack.map((tech, index) => (
+              <span
+                key={index}
+                className="badge badge-primary badge-outline badge-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
                 <Link
                   to={`/project/${project.id}`}
                   className="btn btn-primary btn-sm"
@@ -35,7 +46,7 @@ const Projects = () => {
                   View More
                 </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

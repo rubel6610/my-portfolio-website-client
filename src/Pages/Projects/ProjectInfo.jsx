@@ -26,7 +26,7 @@ export const projectInfo = [
     id: 2,
     name: "Spread Knowledge",
     img: SpreadKnowledge,
-    stack: ["React", "Firebase", "Tailwind CSS"],
+    stack: ["React", "Tailwind CSS","Express", "MongoDB", ],
     description:
       "An educational platform where users can share knowledge through blogs, tutorials, and courses.",
     liveLink: "https://knowledge-spread.netlify.app/",

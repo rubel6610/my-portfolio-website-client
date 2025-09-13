@@ -116,7 +116,7 @@ const Navbar = () => {
       {/* Right Section (Only large screens) */}
       
         <a
-          href="/resume.pdf"
+          href="https://drive.usercontent.google.com/download?id=1U46SDHYsdZMihuKgrMVWf8fmBO5VYnTw&export=download&authuser=0"
           download
           className="btn hidden md:flex mr-3 md:btn-sm btn-xs btn-primary gap-2"
         >

@@ -6,7 +6,7 @@ import PlantTracker from "../../assets/ProjectsImage/Plant-tracker.jpeg"
 export const projectInfo = [
   {
     id: 1,
-    name: "Food Donation Website",
+    name: "Full Stack Food Save",
     img: FoodSave,
     stack: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
     description:
